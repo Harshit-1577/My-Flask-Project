@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <div>
+            <label for="name">Name:</label>
+            <span>{{ user_data[0] }}</span>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <span>{{ user_data[1] }}</span>
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <span>{{ user_data[2] }}</span>
+        </div>
+        <div>
+            <label for="role">Role:</label>
+            <span>{{ user_data[3] }}</span>
+        </div>
+        <div>
+            <label for="branch">Branch:</label>
+            <span>{{ user_data[4] }}</span>
+        </div>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>
